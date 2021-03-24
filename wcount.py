@@ -8,10 +8,10 @@ def count_from_file(filename):
     npars = 0
     with open(filename, "rt") as fd:
         for par in fd:
-            nletters += len(par)
             par = par.rstrip()
             npars += 1
             for word in par.split():
+                nletters += len(word)
                 nwords += 1
     return nletters, nwords, npars
 
