@@ -17,7 +17,7 @@ def count_from_file(filename):
 
 if __name__=='__main__':
     if len(sys.argv)<2:
-        print("Usage: wcount.py input_file.txt")
+        print("Usage:\n wcount.py input_file.txt")
         sys.exit(1)
     nletters, nwords, npars = count_from_file(sys.argv[1])
     print(f"letters:{nletters} words:{nwords} paragraphs:{npars}")
